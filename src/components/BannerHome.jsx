@@ -1,10 +1,11 @@
 import React from "react";
 import { MdOutlinePets } from 'react-icons/md';
+import ButtonBlue from "./buttons/ButtonBlue";
 
-const BannerHome = () => {
+const BannerHome = ({ text }) => {
   return (
 
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen max-w-screen-2xl mx-auto">
         <div className="absolute inset-0 bg-cover bg-center bg-hero-home"></div>
             <div className="relative" id="relative">
                 <header>
@@ -16,12 +17,8 @@ const BannerHome = () => {
                             <p className="text-white font-bold text-2xl flex items-center">Pets System</p>
                         </div>
                     <nav className="flex items-center space-x-1 text-sm gap-4 font-medium text-gray-800">
-                        <button className="rounded bg-sky-600 px-3 py-2 text-white transition hover:bg-sky-700">
-                            Ingresar
-                        </button>
-                        <button className="rounded bg-sky-600 px-3 py-2 text-white transition hover:bg-sky-700">
-                            Registro
-                        </button>
+                        <ButtonBlue text="Ingresar"/>
+                        <ButtonBlue text="Registro"/>
                     </nav>
                     </div>
                 <div className="relative">

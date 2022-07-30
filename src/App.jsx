@@ -1,12 +1,17 @@
 import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ViewHome from './views/ViewHome';
 
 function App() {
 
 
   return (
-    <div className="App bg-orange-500 min-h-screen">
-   <h1>hola</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ViewHome />} />
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 

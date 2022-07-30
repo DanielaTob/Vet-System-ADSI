@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const BannerHome = ({ text }) => {
   return (
 
-    <div className="w-screen h-screen max-w-screen-2xl mx-auto">
+    <div className="w-screen min-h-screen max-w-screen-2xl mx-auto">
         <div className="absolute inset-0 bg-cover bg-center bg-hero-home"></div>
             <div className="relative" id="relative">
                 <header>
@@ -21,7 +21,9 @@ const BannerHome = ({ text }) => {
                             <ButtonBlue text="Ingresar"/>
                         </Link>
                         
-                        <ButtonBlue text="Registro"/>
+                        <Link to="/registro">
+                            <ButtonBlue text="Registro"/>
+                        </Link>
                     </nav>
                     </div>
                 <div className="relative">

@@ -2,13 +2,16 @@ import React from 'react'
 import ButtonBlue from './buttons/ButtonBlue'
 import ButtonWhite from './buttons/ButtonWhite'
 import imglogin from '/assets/animals1.png'
+import { Link } from "react-router-dom";
 
 const FormLogin = ({ text }) => {
   return (
-    <div>
+    <div className='max-w-screen-2xl mx-auto'>
         
         <div className='pt-8 text-center'>
+          <Link to="/registro">
             <ButtonBlue text="Registro"/>
+          </Link>
         </div>
 
         <div className='grid p-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>

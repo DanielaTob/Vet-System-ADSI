@@ -12,10 +12,9 @@ const BannerHome = ({ text }) => {
                 <header>
                     <div className="sm:px-12 mx-auto flex items-center justify-between p-4 shadow-2xl bg-white bg-opacity-30">
                         <div className="flex items-center space-x-2 gap-2">
-                            <button className="text-white text-4xl">
+                            <button className="text-sky-600 text-5xl">
                                 <MdOutlinePets />
                             </button>
-                            <p className="text-white font-bold text-2xl flex items-center">Pets System</p>
                         </div>
                     <nav className="flex items-center space-x-1 text-sm gap-4 font-medium text-gray-800">
                         <Link to="/iniciar-sesion">

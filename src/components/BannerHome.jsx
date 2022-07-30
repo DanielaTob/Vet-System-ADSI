@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlinePets } from 'react-icons/md';
 import ButtonBlue from "./buttons/ButtonBlue";
+import { Link } from "react-router-dom";
 
 const BannerHome = ({ text }) => {
   return (
@@ -17,7 +18,10 @@ const BannerHome = ({ text }) => {
                             <p className="text-white font-bold text-2xl flex items-center">Pets System</p>
                         </div>
                     <nav className="flex items-center space-x-1 text-sm gap-4 font-medium text-gray-800">
-                        <ButtonBlue text="Ingresar"/>
+                        <Link to="/iniciar-sesion">
+                            <ButtonBlue text="Ingresar"/>
+                        </Link>
+                        
                         <ButtonBlue text="Registro"/>
                     </nav>
                     </div>

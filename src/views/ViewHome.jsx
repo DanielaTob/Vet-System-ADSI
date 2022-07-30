@@ -2,6 +2,7 @@ import React from 'react'
 import BannerHome from '../components/BannerHome'
 import Footer from '../components/Footer'
 
+
 const ViewHome = () => {
   return (
     <div>

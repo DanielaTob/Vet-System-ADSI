@@ -48,7 +48,9 @@ const FormLogin = ({ text }) => {
                 </div>
 
                 <div className='text-center pt-4'>
+                  <Link to="/dashboard">
                   <ButtonWhite text="Ingresar"/> 
+                  </Link>
                 </div>
 
               </form>

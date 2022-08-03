@@ -97,7 +97,9 @@ const FormRegistro = ({ text }) => {
                 </div>
 
                 <div className='text-center'>
+                    <Link to="/dashboard">
                     <ButtonWhite text="Ingresar"/>
+                    </Link>
                 </div>
 
   

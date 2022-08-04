@@ -1,9 +1,10 @@
 import React from 'react'
+import TableCitas from '../components/tables/TableCitas'
 
 const ViewCitas = () => {
   return (
-    <div className='bg-blue-400 min-h-screen'>
-        Citas
+    <div className=' min-h-screen'>
+        <TableCitas />
     </div>
   )
 }

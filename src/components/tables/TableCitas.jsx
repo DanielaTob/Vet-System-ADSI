@@ -3,6 +3,7 @@ import DataTable from "react-data-table-component";
 import { FaTrash } from 'react-icons/fa';
 import { MdModeEdit } from 'react-icons/md';
 import ButtonBlue from '../buttons/ButtonBlue';
+import ModalCita from '../modals/ModalCita';
 
 
 const TableCitas = () => {
@@ -80,11 +81,9 @@ const TableCitas = () => {
   return (
 
     <div className='max-w-screen-2xl mx-auto min-h-screen'>
-        <div className='flex gap-4'>
-            <ButtonBlue text="Agregar nueva cita"/>
-        </div>
+        <ModalCita />
         <DataTable
-                  title={"Pacientes"}
+                  title={"Citas"}
                   columns={colums}
                   data={data}
                   pagination

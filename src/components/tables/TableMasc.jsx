@@ -2,7 +2,9 @@ import React, { useMemo, useState } from 'react'
 import DataTable from "react-data-table-component";
 import { FaTrash } from 'react-icons/fa';
 import { MdModeEdit } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 import ButtonBlue from '../buttons/ButtonBlue';
+import ModalUser from '../modals/ModalUser';
 
 const TableMasc = () => {
 
@@ -78,7 +80,9 @@ const TableMasc = () => {
         {
             name: "Ver ficha",
             cell: (data) => (
+                <Link to="/ficha-paciente">
                 <ButtonBlue text="Ver ficha"/>
+                </Link>
             ),
             button: true,
         },
@@ -86,7 +90,9 @@ const TableMasc = () => {
         {
             name: "Nueva consulta",
             cell: (data) => (
+                <Link to="/nueva-consulta">
                 <ButtonBlue text="Consulta"/>
+                </Link>
             ),
             button: true,
         }
@@ -140,12 +146,9 @@ const TableMasc = () => {
 
   return (
     <div className='max-w-screen-2xl mx-auto min-h-screen'>
-        <div className='flex gap-4'>
+        <div>
             <div>
-                <ButtonBlue text="Nuevo Paciente"/>
-            </div>
-            <div>
-                <ButtonBlue text="Nuevo Cliente"/>
+                <ModalUser />
             </div>
         </div>
         <DataTable

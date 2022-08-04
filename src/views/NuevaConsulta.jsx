@@ -5,7 +5,7 @@ import FormConsulta from '../components/FormConsulta'
 
 const NuevaConsulta = () => {
   return (
-    <div>
+    <div className='max-w-screen-2xl mx-auto'>
       <div className='text-center pt-6'>
             <h1 className='text-sky-600 text-4xl font-bold'>Nueva Consulta</h1>
       </div>

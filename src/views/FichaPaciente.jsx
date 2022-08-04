@@ -5,7 +5,7 @@ import FormFicha from '../components/FormFicha'
 
 const FichaPaciente = ({text}) => {
   return (
-    <div>
+    <div className='max-w-screen-2xl mx-auto'>
         <div className='text-center pt-6'>
             <h1 className='text-sky-600 text-4xl font-bold'>Ficha del paciente</h1>
         </div>

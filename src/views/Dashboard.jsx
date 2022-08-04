@@ -13,7 +13,7 @@ const Dashboard = () => {
 
         <div>
             <div className="">
-                <div className="flex flex-row min-h-screen ">
+                <div className="flex flex-row min-h-screen max-w-screen-2xl mx-auto">
 
                 <SideBar handleShow={setComponent}/>
 

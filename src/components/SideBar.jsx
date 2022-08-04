@@ -47,7 +47,7 @@ const SideBar = ({handleShow}) => {
                         <span className="flex items-center justify-center text-lg text-gray-400">
                             <MdDateRange className='text-white text-2xl'/>
                         </span>
-                        <span class="ml-3 font-bold text-lg">Citas</span>
+                        <span className="ml-3 font-bold text-lg">Citas</span>
                     </button>
                 </div>
 
@@ -57,10 +57,10 @@ const SideBar = ({handleShow}) => {
                             handleShow(3);
                         }}
                         className="flex flex-row items-center h-10 px-3 text-white ">
-                        <span class="flex items-center justify-center text-lg text-gray-400">
+                        <span className="flex items-center justify-center text-lg text-gray-400">
                             <FaUser className='text-white text-2xl'/>
                         </span>
-                        <span class="ml-3 font-bold text-lg">Perfil</span>
+                        <span className="ml-3 font-bold text-lg">Perfil</span>
                     </button>
                 </div>
 
@@ -70,7 +70,7 @@ const SideBar = ({handleShow}) => {
                             handleShow(4);
                         }}
                         className="flex flex-row items-center h-10 px-3 text-white">
-                        <span class="flex items-center justify-center text-lg text-gray-400">
+                        <span className="flex items-center justify-center text-lg text-gray-400">
                             <AiFillSetting className='text-white text-2xl'/>
                         </span>
                         <span className="ml-3 font-bold text-lg">Configuración</span>

@@ -1,9 +1,14 @@
 import React from 'react'
+import ButtonBlue from '../components/buttons/ButtonBlue'
+import CardProfile from '../components/CardProfile'
 
-const ViewPerfil = () => {
+const ViewPerfil = ({ text }) => {
   return (
-    <div className='bg-orange-400 min-h-screen'>
-        Perfil
+    <div className='min-h-screen'>
+      <div className='flex justify-end pb-2'>
+        <ButtonBlue text="Actualizar información"/>
+      </div>
+        <CardProfile />
     </div>
   )
 }
